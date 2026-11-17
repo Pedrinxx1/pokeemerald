@@ -858,12 +858,48 @@
 #define TRAINER_LEAF                        852
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
+#define TRAINER_LEON_1                      855
+#define TRAINER_LEON_2                      856
+#define TRAINER_LEON_3                      857
+#define TRAINER_LEON_4                      858
+#define TRAINER_LEON_5                      859
+#define TRAINER_LEON_6                      860
+#define TRAINER_LEON_7                      861
+#define TRAINER_LEON_8                      862
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      855
+// Legends of the World: treinadores reaproveitados das revanches de ginásio
+#define TRAINER_LEGENDS_BROCK               TRAINER_ROXANNE_2
+#define TRAINER_LEGENDS_DRAKE               TRAINER_ROXANNE_3
+#define TRAINER_LEGENDS_MORTY               TRAINER_ROXANNE_4
+#define TRAINER_LEGENDS_ROCKET1             TRAINER_ROXANNE_5
+#define TRAINER_LEGENDS_ROCKET_EXEC         TRAINER_BRAWLY_2
+#define TRAINER_LEGENDS_AGENT               TRAINER_WATTSON_3
+#define TRAINER_LEGENDS_GALACTIC            TRAINER_BRAWLY_3
+#define TRAINER_LEGENDS_VOLKNER             TRAINER_BRAWLY_4
+#define TRAINER_LEGENDS_PLASMA              TRAINER_BRAWLY_5
+#define TRAINER_LEGENDS_ORDER_LEADER        TRAINER_WATTSON_2
+#define TRAINER_LEGENDS_SCIENTIST           TRAINER_WATTSON_4
+#define TRAINER_LEGENDS_KIAWE               TRAINER_WATTSON_5
+#define TRAINER_LEGENDS_GALAR_BOSS          TRAINER_FLANNERY_2
+
+#define TRAINER_LEON_9                      863
+#define TRAINER_LEGENDS_PALDEA_AGENT        TRAINER_WINONA_3
+#define TRAINER_LEGENDS_AUREON              TRAINER_WINONA_5
+#define TRAINER_LEGENDS_CILAN               TRAINER_WINONA_4
+#define TRAINER_LEGENDS_ASH                 TRAINER_WINONA_2
+#define TRAINER_LEGENDS_BLUE                TRAINER_FLANNERY_3
+#define TRAINER_LEGENDS_LANCE               TRAINER_FLANNERY_4
+#define TRAINER_LEGENDS_STEVEN              TRAINER_FLANNERY_5
+#define TRAINER_LEGENDS_CYNTHIA             TRAINER_NORMAN_2
+#define TRAINER_LEGENDS_ALDER               TRAINER_NORMAN_3
+#define TRAINER_LEGENDS_IRIS                TRAINER_NORMAN_4
+#define TRAINER_LEGENDS_DIANTHA             TRAINER_NORMAN_5
+
+#define TRAINERS_COUNT                      864
 #define MAX_TRAINERS_COUNT                  864
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 

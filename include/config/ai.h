@@ -75,6 +75,9 @@
 #define AI_CONSERVE_TERA_CHANCE_PER_MON                         10 // Chance for AI with smart tera flag to decide not to tera before considering defensive benefit is this*(X-1), where X is the number of alive pokemon that could tera
 #define AI_TERA_PREDICT_CHANCE                                  40 // Chance for AI with smart tera flag to tera in the situation where tera would save it from a KO, but could be punished by a KO from a different move.
 
+// IA extra aplicada a todos os treinadores (sem OMNISCIENT: nao enxerga seus golpes)
+#define EXTRA_TRAINER_AI_FLAGS (AI_FLAG_SMART_TRAINER & ~AI_FLAG_OMNISCIENT)
+
 // AI_FLAG_PP_STALL_PREVENTION settings
 #define PP_STALL_DISREGARD_MOVE_PERCENTAGE                      50 // Detection chance per roll
 #define PP_STALL_SCORE_REDUCTION                                20 // Score reduction if any roll for PP stall detection passes

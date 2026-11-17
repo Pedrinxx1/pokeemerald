@@ -186,6 +186,134 @@
       "y": 52,
       "respawn_map": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_FRONTIER_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_PALLET",
+      "map": "MAP_LEGENDS_PALLET_TOWN",
+      "x": 6,
+      "y": 9,
+      "respawn_map": "MAP_LEGENDS_PALLET_HOUSE",
+      "respawn_npc": "LOCALID_LEGENDS_MOM"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_VIRIDIAN",
+      "map": "MAP_LEGENDS_VIRIDIAN_CITY",
+      "x": 6,
+      "y": 9,
+      "respawn_map": "MAP_LEGENDS_VIRIDIAN_PC",
+      "respawn_npc": "LOCALID_LEGENDS_VIRIDIAN_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_PEWTER",
+      "map": "MAP_LEGENDS_PEWTER_CITY",
+      "x": 5,
+      "y": 8,
+      "respawn_map": "MAP_LEGENDS_PEWTER_PC",
+      "respawn_npc": "LOCALID_LEGENDS_PEWTER_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_INDIGO",
+      "map": "MAP_LEGENDS_INDIGO_PLATEAU",
+      "x": 10,
+      "y": 11,
+      "respawn_map": "MAP_LEGENDS_INDIGO_LEAGUE",
+      "respawn_npc": "LOCALID_LEGENDS_INDIGO_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_VALENCIA",
+      "map": "MAP_LEGENDS_VALENCIA",
+      "x": 6,
+      "y": 9,
+      "respawn_map": "MAP_LEGENDS_VALENCIA_PC",
+      "respawn_npc": "LOCALID_LEGENDS_VALENCIA_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_ECRUTEAK",
+      "map": "MAP_LEGENDS_ECRUTEAK",
+      "x": 5,
+      "y": 8,
+      "respawn_map": "MAP_LEGENDS_ECRUTEAK_PC",
+      "respawn_npc": "LOCALID_LEGENDS_ECRUTEAK_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_HOENN",
+      "map": "MAP_LEGENDS_HOENN_SOOTOPOLIS",
+      "x": 43,
+      "y": 32,
+      "respawn_map": "MAP_LEGENDS_HOENN_PC",
+      "respawn_npc": "LOCALID_LEGENDS_HOENN_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_CELESTIC",
+      "map": "MAP_LEGENDS_CELESTIC",
+      "x": 5,
+      "y": 8,
+      "respawn_map": "MAP_LEGENDS_CELESTIC_PC",
+      "respawn_npc": "LOCALID_LEGENDS_CELESTIC_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_OPELUCID",
+      "map": "MAP_LEGENDS_OPELUCID",
+      "x": 5,
+      "y": 8,
+      "respawn_map": "MAP_LEGENDS_OPELUCID_PC",
+      "respawn_npc": "LOCALID_LEGENDS_OPELUCID_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_LUMIOSE",
+      "map": "MAP_LEGENDS_LUMIOSE",
+      "x": 5,
+      "y": 8,
+      "respawn_map": "MAP_LEGENDS_LUMIOSE_PC",
+      "respawn_npc": "LOCALID_LEGENDS_LUMIOSE_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_MELEMELE",
+      "map": "MAP_LEGENDS_MELEMELE",
+      "x": 6,
+      "y": 9,
+      "respawn_map": "MAP_LEGENDS_MELEMELE_PC",
+      "respawn_npc": "LOCALID_LEGENDS_MELEMELE_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_WYNDON",
+      "map": "MAP_LEGENDS_WYNDON",
+      "x": 5,
+      "y": 8,
+      "respawn_map": "MAP_LEGENDS_WYNDON_PC",
+      "respawn_npc": "LOCALID_LEGENDS_WYNDON_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_MESAGOZA",
+      "map": "MAP_LEGENDS_MESAGOZA",
+      "x": 5,
+      "y": 8,
+      "respawn_map": "MAP_LEGENDS_MESAGOZA_PC",
+      "respawn_npc": "LOCALID_LEGENDS_MESAGOZA_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_PRIMORDIAL",
+      "map": "MAP_LEGENDS_PRIMORDIAL",
+      "x": 31,
+      "y": 22,
+      "respawn_map": "MAP_LEGENDS_PRIMORDIAL_PC",
+      "respawn_npc": "LOCALID_LEGENDS_PRIMORDIAL_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_STADIUM",
+      "map": "MAP_LEGENDS_WORLD_STADIUM",
+      "x": 5,
+      "y": 8,
+      "respawn_map": "MAP_LEGENDS_WORLD_STADIUM_PC",
+      "respawn_npc": "LOCALID_LEGENDS_WORLD_STADIUM_PC_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_LEGENDS_DECOLORE",
+      "map": "MAP_LEGENDS_DECOLORE",
+      "x": 6,
+      "y": 9,
+      "respawn_map": "MAP_LEGENDS_DECOLORE_PC",
+      "respawn_npc": "LOCALID_LEGENDS_DECOLORE_PC_NURSE"
     }
   ]
 }

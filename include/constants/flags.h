@@ -44,53 +44,53 @@
 #define NUM_TEMP_FLAGS   (TEMP_FLAGS_END - TEMP_FLAGS_START + 1)
 
 #define FLAG_NUZLOCKE        0x20 // Nuzlocke Challenge flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
-#define FLAG_UNUSED_0x02A    0x2A // Unused Flag
-#define FLAG_UNUSED_0x02B    0x2B // Unused Flag
-#define FLAG_UNUSED_0x02C    0x2C // Unused Flag
-#define FLAG_UNUSED_0x02D    0x2D // Unused Flag
-#define FLAG_UNUSED_0x02E    0x2E // Unused Flag
-#define FLAG_UNUSED_0x02F    0x2F // Unused Flag
-#define FLAG_UNUSED_0x030    0x30 // Unused Flag
-#define FLAG_UNUSED_0x031    0x31 // Unused Flag
-#define FLAG_UNUSED_0x032    0x32 // Unused Flag
-#define FLAG_UNUSED_0x033    0x33 // Unused Flag
-#define FLAG_UNUSED_0x034    0x34 // Unused Flag
-#define FLAG_UNUSED_0x035    0x35 // Unused Flag
-#define FLAG_UNUSED_0x036    0x36 // Unused Flag
-#define FLAG_UNUSED_0x037    0x37 // Unused Flag
-#define FLAG_UNUSED_0x038    0x38 // Unused Flag
-#define FLAG_UNUSED_0x039    0x39 // Unused Flag
-#define FLAG_UNUSED_0x03A    0x3A // Unused Flag
-#define FLAG_UNUSED_0x03B    0x3B // Unused Flag
-#define FLAG_UNUSED_0x03C    0x3C // Unused Flag
-#define FLAG_UNUSED_0x03D    0x3D // Unused Flag
-#define FLAG_UNUSED_0x03E    0x3E // Unused Flag
-#define FLAG_UNUSED_0x03F    0x3F // Unused Flag
-#define FLAG_UNUSED_0x040    0x40 // Unused Flag
-#define FLAG_UNUSED_0x041    0x41 // Unused Flag
-#define FLAG_UNUSED_0x042    0x42 // Unused Flag
-#define FLAG_UNUSED_0x043    0x43 // Unused Flag
-#define FLAG_UNUSED_0x044    0x44 // Unused Flag
-#define FLAG_UNUSED_0x045    0x45 // Unused Flag
-#define FLAG_UNUSED_0x046    0x46 // Unused Flag
-#define FLAG_UNUSED_0x047    0x47 // Unused Flag
-#define FLAG_UNUSED_0x048    0x48 // Unused Flag
-#define FLAG_UNUSED_0x049    0x49 // Unused Flag
-#define FLAG_UNUSED_0x04A    0x4A // Unused Flag
-#define FLAG_UNUSED_0x04B    0x4B // Unused Flag
-#define FLAG_UNUSED_0x04C    0x4C // Unused Flag
-#define FLAG_UNUSED_0x04D    0x4D // Unused Flag
-#define FLAG_UNUSED_0x04E    0x4E // Unused Flag
-#define FLAG_UNUSED_0x04F    0x4F // Unused Flag
+#define FLAG_CHAPTER_1_DONE    0x21 // Legends of the World: capítulo 1 concluído
+#define FLAG_CHAPTER_2_DONE    0x22 // Legends of the World: capítulo 2 concluído
+#define FLAG_CHAPTER_3_DONE    0x23 // Legends of the World: capítulo 3 concluído
+#define FLAG_CHAPTER_4_DONE    0x24 // Legends of the World: capítulo 4 concluído
+#define FLAG_CHAPTER_5_DONE    0x25 // Legends of the World: capítulo 5 concluído
+#define FLAG_CHAPTER_6_DONE    0x26 // Legends of the World: capítulo 6 concluído
+#define FLAG_CHAPTER_7_DONE    0x27 // Legends of the World: capítulo 7 concluído
+#define FLAG_CHAPTER_8_DONE    0x28 // Legends of the World: capítulo 8 concluído
+#define FLAG_CHAPTER_9_DONE    0x29 // Legends of the World: capítulo 9 concluído
+#define FLAG_CHAPTER_10_DONE    0x2A // Legends of the World: capítulo 10 concluído
+#define FLAG_CHAPTER_11_DONE    0x2B // Legends of the World: capítulo 11 concluído
+#define FLAG_CHAPTER_12_DONE    0x2C // Legends of the World: capítulo 12 concluído
+#define FLAG_CHAPTER_13_DONE    0x2D // Legends of the World: capítulo 13 concluído
+#define FLAG_CHAPTER_14_DONE    0x2E // Legends of the World: capítulo 14 concluído
+#define FLAG_CHAPTER_15_DONE    0x2F // Legends of the World: capítulo 15 concluído
+#define FLAG_LEGENDS_NOCATCH    0x30 // Legends of the World
+#define FLAG_LEGENDS_BROCK    0x31 // Legends of the World
+#define FLAG_LEGENDS_RED_MET    0x32 // Legends of the World
+#define FLAG_LEGENDS_MEWTWO    0x33 // Legends of the World
+#define FLAG_LEGENDS_ROCKET_LAB    0x34 // Legends of the World
+#define FLAG_LEGENDS_DRAKE    0x35 // Legends of the World
+#define FLAG_LEGENDS_TEMPLE    0x36 // Legends of the World
+#define FLAG_LEGENDS_MORTY    0x37 // Legends of the World
+#define FLAG_LEGENDS_EXEC    0x38 // Legends of the World
+#define FLAG_LEGENDS_HOOH    0x39 // Legends of the World
+#define FLAG_LEGENDS_LEON3    0x3A // Legends of the World
+#define FLAG_LEGENDS_STARTER    0x3B // Legends of the World
+#define FLAG_HIDE_LEGENDS_INDIGO_GUARD    0x3C // Legends of the World
+#define FLAG_HIDE_LEGENDS_LEON_LAB    0x3D // Legends of the World
+#define FLAG_HIDE_LEGENDS_MEWTWO    0x3E // Legends of the World
+#define FLAG_HIDE_LEGENDS_RED    0x3F // Legends of the World
+#define FLAG_HIDE_LEGENDS_TOWER_GUARD    0x40 // Legends of the World
+#define FLAG_HIDE_LEGENDS_INDIGO_LUGIA    0x41 // Legends of the World
+#define FLAG_HIDE_LEGENDS_PALLET_SAILOR    0x42 // Legends of the World
+#define FLAG_LEGENDS_LEON4    0x43 // Legends of the World
+#define FLAG_LEGENDS_LEON5    0x44 // Legends of the World
+#define FLAG_LEGENDS_LEON6    0x45 // Legends of the World
+#define FLAG_LEGENDS_AGENT    0x46 // Legends of the World
+#define FLAG_LEGENDS_VOLKNER    0x47 // Legends of the World
+#define FLAG_LEGENDS_GALACTIC    0x48 // Legends of the World
+#define FLAG_LEGENDS_ORDER_LEADER    0x49 // Legends of the World
+#define FLAG_HIDE_LEGENDS_RAYQUAZA    0x4A // Legends of the World
+#define FLAG_HIDE_LEGENDS_GIRATINA    0x4B // Legends of the World
+#define FLAG_LEGENDS_LEON7    0x4C // Legends of the World
+#define FLAG_LEGENDS_LEON8    0x4D // Legends of the World
+#define FLAG_LEGENDS_KALOS_LAB    0x4E // Legends of the World
+#define FLAG_LEGENDS_KIAWE    0x4F // Legends of the World
 
 // Scripts
 #define FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL  0x50
@@ -255,7 +255,7 @@
 #define FLAG_RECEIVED_TM_ROAR                0xE7
 #define FLAG_RECEIVED_TM_GIGA_DRAIN          0xE8
 
-#define FLAG_UNUSED_0x0E9                    0xE9 // Unused Flag
+#define FLAG_LEGENDS_DEN                    0xE9 // Legends of the World
 
 #define FLAG_RECEIVED_TM_REST                0xEA
 #define FLAG_RECEIVED_TM_ATTRACT             0xEB
@@ -460,8 +460,8 @@
 #define FLAG_REGISTERED_DRAKE                (TRAINER_REGISTERED_FLAGS_START + REMATCH_DRAKE)
 #define FLAG_REGISTERED_WALLACE              (TRAINER_REGISTERED_FLAGS_START + REMATCH_WALLACE)
 
-#define FLAG_UNUSED_0x1AA                    0x1AA // Unused Flag
-#define FLAG_UNUSED_0x1AB                    0x1AB // Unused Flag
+#define FLAG_LEGENDS_GALAR_BOSS                    0x1AA // Legends of the World
+#define FLAG_HIDE_LEGENDS_ZYGARDE                    0x1AB // Legends of the World
 
 #define FLAG_DEFEATED_DEOXYS                 0x1AC
 #define FLAG_BATTLED_DEOXYS                  0x1AD
@@ -510,18 +510,18 @@
 #define FLAG_ENABLE_TATE_AND_LIZA_MATCH_CALL 0x1D8
 #define FLAG_ENABLE_JUAN_MATCH_CALL          0x1D9
 
-#define FLAG_UNUSED_0x1DA                    0x1DA // Unused Flag
+#define FLAG_LEGENDS_PALDEA_AGENT                    0x1DA // Legends of the World
 
 #define FLAG_SHOWN_MYSTIC_TICKET             0x1DB
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
-#define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
-#define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
+#define FLAG_LEGENDS_NOWHITEOUT                    0x1DE // Legends of the World
+#define FLAG_LEGENDS_NUZ_PAUSE                    0x1DF // Legends of the World
+#define FLAG_HIDE_LEGENDS_AUREON                    0x1E0 // Legends of the World
+#define FLAG_LEGENDS_CORRUPT1                    0x1E1 // Legends of the World
+#define FLAG_LEGENDS_CORRUPT2                    0x1E2 // Legends of the World
+#define FLAG_LEGENDS_CORRUPT3                    0x1E3 // Legends of the World
 
 // Mystery Gift Flags (Unknown)
 #define FLAG_MYSTERY_GIFT_DONE               0x1E4
@@ -656,14 +656,14 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_UNUSED_0x264  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
+#define FLAG_EXP_SHARE_ON  0x264 // Exp. Share
+#define FLAG_HIDE_LEGENDS_RECORDING  0x265 // Legends of the World
+#define FLAG_LEGENDS_MEW_CAUGHT  0x266 // Legends of the World
+#define FLAG_LEGENDS_CILAN  0x267 // Legends of the World
+#define FLAG_LEGENDS_DECOLORE_GIFT  0x268 // Legends of the World
+#define FLAG_HIDE_LEGENDS_GUIDES  0x269 // Legends of the World
+#define FLAG_LEGENDS_EPILOGUE  0x26A // Legends of the World
+#define FLAG_LEGENDS_WORLD_CHAMP  0x26B // Legends of the World
 #define FLAG_UNUSED_0x26C  0x26C // Unused Flag
 #define FLAG_UNUSED_0x26D  0x26D // Unused Flag
 #define FLAG_UNUSED_0x26E  0x26E // Unused Flag

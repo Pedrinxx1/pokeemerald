@@ -207,3 +207,75 @@ const u16 gMetatileAttributes_MysteryEventsHouse[] = INCBIN_U16("data/tilesets/s
 
 const u16 gMetatiles_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatiles.bin");
 const u16 gMetatileAttributes_UnionRoom[] = INCBIN_U16("data/tilesets/secondary/union_room/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsKanto[] = INCBIN_U16("data/tilesets/secondary/legends_kanto/metatiles.bin");
+const u16 gMetatileAttributes_LegendsKanto[] = INCBIN_U16("data/tilesets/secondary/legends_kanto/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsValencia[] = INCBIN_U16("data/tilesets/secondary/legends_valencia/metatiles.bin");
+const u16 gMetatileAttributes_LegendsValencia[] = INCBIN_U16("data/tilesets/secondary/legends_valencia/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsPummelo[] = INCBIN_U16("data/tilesets/secondary/legends_pummelo/metatiles.bin");
+const u16 gMetatileAttributes_LegendsPummelo[] = INCBIN_U16("data/tilesets/secondary/legends_pummelo/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsForbiddenIsland[] = INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/metatiles.bin");
+const u16 gMetatileAttributes_LegendsForbiddenIsland[] = INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsEcruteak[] = INCBIN_U16("data/tilesets/secondary/legends_ecruteak/metatiles.bin");
+const u16 gMetatileAttributes_LegendsEcruteak[] = INCBIN_U16("data/tilesets/secondary/legends_ecruteak/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsCelestic[] = INCBIN_U16("data/tilesets/secondary/legends_celestic/metatiles.bin");
+const u16 gMetatileAttributes_LegendsCelestic[] = INCBIN_U16("data/tilesets/secondary/legends_celestic/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsSpearPillar[] = INCBIN_U16("data/tilesets/secondary/legends_spearpillar/metatiles.bin");
+const u16 gMetatileAttributes_LegendsSpearPillar[] = INCBIN_U16("data/tilesets/secondary/legends_spearpillar/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsDistortionWorld[] = INCBIN_U16("data/tilesets/secondary/legends_distortionworld/metatiles.bin");
+const u16 gMetatileAttributes_LegendsDistortionWorld[] = INCBIN_U16("data/tilesets/secondary/legends_distortionworld/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsOpelucid[] = INCBIN_U16("data/tilesets/secondary/legends_opelucid/metatiles.bin");
+const u16 gMetatileAttributes_LegendsOpelucid[] = INCBIN_U16("data/tilesets/secondary/legends_opelucid/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsDragonspiralTop[] = INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/metatiles.bin");
+const u16 gMetatileAttributes_LegendsDragonspiralTop[] = INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsLumiose[] = INCBIN_U16("data/tilesets/secondary/legends_lumiose/metatiles.bin");
+const u16 gMetatileAttributes_LegendsLumiose[] = INCBIN_U16("data/tilesets/secondary/legends_lumiose/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsMelemele[] = INCBIN_U16("data/tilesets/secondary/legends_melemele/metatiles.bin");
+const u16 gMetatileAttributes_LegendsMelemele[] = INCBIN_U16("data/tilesets/secondary/legends_melemele/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsUltraSpace[] = INCBIN_U16("data/tilesets/secondary/legends_ultraspace/metatiles.bin");
+const u16 gMetatileAttributes_LegendsUltraSpace[] = INCBIN_U16("data/tilesets/secondary/legends_ultraspace/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsWyndon[] = INCBIN_U16("data/tilesets/secondary/legends_wyndon/metatiles.bin");
+const u16 gMetatileAttributes_LegendsWyndon[] = INCBIN_U16("data/tilesets/secondary/legends_wyndon/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsMesagoza[] = INCBIN_U16("data/tilesets/secondary/legends_mesagoza/metatiles.bin");
+const u16 gMetatileAttributes_LegendsMesagoza[] = INCBIN_U16("data/tilesets/secondary/legends_mesagoza/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsAreaZero[] = INCBIN_U16("data/tilesets/secondary/legends_areazero/metatiles.bin");
+const u16 gMetatileAttributes_LegendsAreaZero[] = INCBIN_U16("data/tilesets/secondary/legends_areazero/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsPrimordial[] = INCBIN_U16("data/tilesets/secondary/legends_primordial/metatiles.bin");
+const u16 gMetatileAttributes_LegendsPrimordial[] = INCBIN_U16("data/tilesets/secondary/legends_primordial/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsSkyTemple[] = INCBIN_U16("data/tilesets/secondary/legends_skytemple/metatiles.bin");
+const u16 gMetatileAttributes_LegendsSkyTemple[] = INCBIN_U16("data/tilesets/secondary/legends_skytemple/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsWorldStadium[] = INCBIN_U16("data/tilesets/secondary/legends_worldstadium/metatiles.bin");
+const u16 gMetatileAttributes_LegendsWorldStadium[] = INCBIN_U16("data/tilesets/secondary/legends_worldstadium/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsPrehistoricIsland[] = INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/metatiles.bin");
+const u16 gMetatileAttributes_LegendsPrehistoricIsland[] = INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsMewIsland[] = INCBIN_U16("data/tilesets/secondary/legends_mewisland/metatiles.bin");
+const u16 gMetatileAttributes_LegendsMewIsland[] = INCBIN_U16("data/tilesets/secondary/legends_mewisland/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsDecolore[] = INCBIN_U16("data/tilesets/secondary/legends_decolore/metatiles.bin");
+const u16 gMetatileAttributes_LegendsDecolore[] = INCBIN_U16("data/tilesets/secondary/legends_decolore/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsTinTower[] = INCBIN_U16("data/tilesets/secondary/legends_tintower/metatiles.bin");
+const u16 gMetatileAttributes_LegendsTinTower[] = INCBIN_U16("data/tilesets/secondary/legends_tintower/metatile_attributes.bin");
+
+const u16 gMetatiles_LegendsBrassTower[] = INCBIN_U16("data/tilesets/secondary/legends_brasstower/metatiles.bin");
+const u16 gMetatileAttributes_LegendsBrassTower[] = INCBIN_U16("data/tilesets/secondary/legends_brasstower/metatile_attributes.bin");

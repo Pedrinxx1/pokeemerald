@@ -1,4 +1,7 @@
 #include "global.h"
+#include "player_custom.h"
+#include "event_object_movement.h"
+#include "constants/event_objects.h"
 #include "trainer_pokemon_sprites.h"
 #include "bg.h"
 #include "constants/rgb.h"
@@ -230,6 +233,9 @@ static void Task_NewGameBirchSpeech_StartNamingScreen(u8);
 static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void);
 static void Task_NewGameBirchSpeech_CreateNameYesNo(u8);
 static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8);
+static void Task_Custom_Init(u8);
+static void Task_Custom_Input(u8);
+extern u16 gNewGameLookChoice;
 void CreateYesNoMenuParameterized(u8, u8, u16, u16, u8, u8);
 static void Task_NewGameBirchSpeech_SlidePlatformAway2(u8);
 static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8);
@@ -265,25 +271,25 @@ static const u32 sBirchSpeechShadowGfx[] = INCBIN_U32("graphics/birch_speech/sha
 static const u32 sBirchSpeechBgMap[] = INCBIN_U32("graphics/birch_speech/map.bin.smolTM");
 static const u16 sBirchSpeechBgGradientPal[] = INCBIN_U16("graphics/birch_speech/bg2.gbapal");
 
-static const u8 gText_SaveFileCorrupted[] = _("The save file is corrupted. The\nprevious save file will be loaded.");
-static const u8 gText_SaveFileErased[] = _("The save file has been erased\ndue to corruption or damage.");
+static const u8 gText_SaveFileCorrupted[] = _("O arquivo salvo está corrompido.\nO arquivo anterior será carregado.");
+static const u8 gText_SaveFileErased[] = _("O arquivo salvo foi apagado por\ncorrupção ou dano.");
 static const u8 gJPText_No1MSubCircuit[] = _("1Mサブきばんが ささっていません！");
-static const u8 gText_BatteryRunDry[] = _("The internal battery has run dry.\nThe game can be played.\pHowever, clock-based events will\nno longer occur.");
+static const u8 gText_BatteryRunDry[] = _("A bateria interna acabou.\nO jogo ainda pode ser jogado.\pMas eventos baseados no relógio\nnão vão mais acontecer.");
 
-static const u8 gText_MainMenuNewGame[] = _("NEW GAME");
-static const u8 gText_MainMenuContinue[] = _("CONTINUE");
-static const u8 gText_MainMenuOption[] = _("OPTION");
-static const u8 gText_MainMenuMysteryGift[] = _("MYSTERY GIFT");
-static const u8 gText_MainMenuMysteryGift2[] = _("MYSTERY GIFT");
-static const u8 gText_MainMenuMysteryEvents[] = _("MYSTERY EVENTS");
-static const u8 gText_WirelessNotConnected[] = _("The Wireless Adapter is not\nconnected.");
-static const u8 gText_MysteryGiftCantUse[] = _("MYSTERY GIFT can't be used while\nthe Wireless Adapter is attached.");
-static const u8 gText_MysteryEventsCantUse[] = _("MYSTERY EVENTS can't be used while\nthe Wireless Adapter is attached.");
+static const u8 gText_MainMenuNewGame[] = _("NOVO JOGO");
+static const u8 gText_MainMenuContinue[] = _("CONTINUAR");
+static const u8 gText_MainMenuOption[] = _("OPÇÕES");
+static const u8 gText_MainMenuMysteryGift[] = _("PRESENTE MISTERIOSO");
+static const u8 gText_MainMenuMysteryGift2[] = _("PRESENTE MISTERIOSO");
+static const u8 gText_MainMenuMysteryEvents[] = _("EVENTOS MISTERIOSOS");
+static const u8 gText_WirelessNotConnected[] = _("O Adaptador Sem Fio não está\nconectado.");
+static const u8 gText_MysteryGiftCantUse[] = _("PRESENTE MISTERIOSO não pode ser usado\ncom o Adaptador Sem Fio conectado.");
+static const u8 gText_MysteryEventsCantUse[] = _("EVENTOS MISTERIOSOS não podem ser usados\ncom o Adaptador Sem Fio conectado.");
 
-static const u8 gText_ContinueMenuPlayer[] = _("PLAYER");
-static const u8 gText_ContinueMenuTime[] = _("TIME");
+static const u8 gText_ContinueMenuPlayer[] = _("JOGADOR");
+static const u8 gText_ContinueMenuTime[] = _("TEMPO");
 static const u8 gText_ContinueMenuPokedex[] = _("POKéDEX");
-static const u8 gText_ContinueMenuBadges[] = _("BADGES");
+static const u8 gText_ContinueMenuBadges[] = _("INSÍGNIAS");
 
 #define MENU_LEFT 2
 #define MENU_TOP_WIN0 1
@@ -428,6 +434,15 @@ static const struct WindowTemplate sNewGameBirchSpeechTextWindows[] =
         .height = 10,
         .paletteNum = 15,
         .baseBlock = 0x85
+    },
+    {
+        .bg = 0,
+        .tilemapLeft = 1,
+        .tilemapTop = 1,
+        .width = 16,
+        .height = 11,
+        .paletteNum = 15,
+        .baseBlock = 0xDF
     },
     DUMMY_WIN_TEMPLATE
 };
@@ -1658,15 +1673,174 @@ static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8 taskId)
     {
         case 0:
             PlaySE(SE_SELECT);
-            gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
-            NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId, 2);
-            NewGameBirchSpeech_StartFadePlatformIn(taskId, 1);
-            gTasks[taskId].func = Task_NewGameBirchSpeech_SlidePlatformAway2;
+            gTasks[taskId].func = Task_Custom_Init;
             break;
         case MENU_B_PRESSED:
         case 1:
             PlaySE(SE_SELECT);
             gTasks[taskId].func = Task_NewGameBirchSpeech_BoyOrGirl;
+    }
+}
+
+// ---------------- criacao do personagem ----------------
+u16 gNewGameLookChoice;
+static u8 sLook[4];
+static u8 sLookRow;
+static u8 sPreviewSpriteId;
+static u8 sPreviewPalNum;
+
+static const u8 sLabelStyle[] = _("Cabelo");
+static const u8 sLabelSkin[] = _("Pele");
+static const u8 sLabelHair[] = _("Cor do cabelo");
+static const u8 sLabelOutfit[] = _("Roupa");
+static const u8 sLabelDone[] = _("PRONTO");
+static const u8 *const sLookLabels[] = {sLabelStyle, sLabelSkin, sLabelHair, sLabelOutfit};
+static const u8 sLookCounts[] = {CUSTOM_NUM_STYLES, 7, 12, 12};
+
+static const u8 sNamesStyle[][16] = {_("Original"), _("Curto"), _("Espetado"), _("Moicano"), _("Longo"), _("Rabo de cavalo"), _("Black power")};
+static const u8 sNamesSkin[][14] = {_("Clara"), _("Rosada"), _("Média"), _("Morena"), _("Parda"), _("Escura"), _("Muito escura")};
+static const u8 sNamesHair[][10] = {_("Preto"), _("Castanho"), _("Loiro"), _("Ruivo"), _("Branco"), _("Cinza"), _("Azul"), _("Rosa"), _("Verde"), _("Roxo"), _("Vermelho"), _("Turquesa")};
+static const u8 sNamesOutfit[][10] = {_("Clássico"), _("Azul"), _("Preto"), _("Branco"), _("Verde"), _("Amarelo"), _("Rosa"), _("Roxo"), _("Laranja"), _("Brasil"), _("Militar"), _("Turquesa")};
+
+static const u8 *GetLookName(u8 row, u8 value)
+{
+    switch (row)
+    {
+    case 0: return sNamesStyle[value];
+    case 1: return sNamesSkin[value];
+    case 2: return sNamesHair[value];
+    default: return sNamesOutfit[value];
+    }
+}
+
+static const union AffineAnimCmd sAffineAnim_Preview[] =
+{
+    AFFINEANIMCMD_FRAME(0x80, 0x80, 0, 0),
+    AFFINEANIMCMD_END
+};
+
+static const union AffineAnimCmd *const sAffineAnims_Preview[] = {sAffineAnim_Preview};
+
+static const struct OamData sOamData_Preview =
+{
+    .affineMode = ST_OAM_AFFINE_DOUBLE,
+    .shape = SPRITE_SHAPE(16x32),
+    .size = SPRITE_SIZE(16x32),
+    .priority = 0,
+};
+
+static void DrawLookMenu(void)
+{
+    u8 i;
+    FillWindowPixelBuffer(3, PIXEL_FILL(1));
+    for (i = 0; i < 4; i++)
+    {
+        StringCopy(gStringVar4, sLookLabels[i]);
+        StringAppend(gStringVar4, gText_Colon2);
+        StringAppend(gStringVar4, GetLookName(i, sLook[i]));
+        AddTextPrinterParameterized(3, FONT_NORMAL, gStringVar4, 10, i * 16 + 1, TEXT_SKIP_DRAW, NULL);
+    }
+    AddTextPrinterParameterized(3, FONT_NORMAL, sLabelDone, 10, 4 * 16 + 1, TEXT_SKIP_DRAW, NULL);
+    AddTextPrinterParameterized(3, FONT_NORMAL, gText_SelectorArrow2, 0, sLookRow * 16 + 1, TEXT_SKIP_DRAW, NULL);
+    PutWindowTilemap(3);
+    CopyWindowToVram(3, COPYWIN_FULL);
+}
+
+static void RefreshLookPreview(void)
+{
+    static const struct SpriteTemplate sTemplate =
+    {
+        .tileTag = TAG_NONE,
+        .paletteTag = TAG_NONE,
+        .oam = &sOamData_Preview,
+        .anims = gDummySpriteAnimTable,
+        .images = NULL,
+        .affineAnims = sAffineAnims_Preview,
+        .callback = SpriteCallbackDummy,
+    };
+    struct SpriteTemplate tmpl = sTemplate;
+    const struct ObjectEventGraphicsInfo *info;
+
+    SetPlayerLook(sLook[0], sLook[1], sLook[2], sLook[3]);
+    BuildPlayerCustomPalette();
+    LoadPalette(gPlayerCustomPal, OBJ_PLTT_ID(sPreviewPalNum), PLTT_SIZE_4BPP);
+    if (sPreviewSpriteId != SPRITE_NONE)
+        DestroySprite(&gSprites[sPreviewSpriteId]);
+    info = GetObjectEventGraphicsInfo(GetCustomPlayerGfxId(gSaveBlock2Ptr->playerGender, 0));
+    tmpl.images = info->images;
+    sPreviewSpriteId = CreateSprite(&tmpl, 176, 80, 0);
+    gSprites[sPreviewSpriteId].oam.paletteNum = sPreviewPalNum;
+    StartSpriteAffineAnim(&gSprites[sPreviewSpriteId], 0);
+}
+
+static void Task_Custom_Init(u8 taskId)
+{
+    u8 i;
+
+    gSprites[gTasks[taskId].tPlayerSpriteId].invisible = TRUE;
+    NewGameBirchSpeech_ClearWindow(0);
+    for (i = 0; i < 4; i++)
+        sLook[i] = 0;
+    sLook[0] = 1;
+    sLookRow = 0;
+    sPreviewSpriteId = SPRITE_NONE;
+    sPreviewPalNum = AllocSpritePalette(0x7A11);
+    DrawMainMenuWindowBorder(&sNewGameBirchSpeechTextWindows[3], 0xF3);
+    RefreshLookPreview();
+    DrawLookMenu();
+    gTasks[taskId].func = Task_Custom_Input;
+}
+
+static void Task_Custom_Input(u8 taskId)
+{
+    bool8 changed = FALSE;
+
+    if (JOY_NEW(DPAD_UP) && sLookRow > 0)
+    {
+        sLookRow--;
+        changed = TRUE;
+    }
+    else if (JOY_NEW(DPAD_DOWN) && sLookRow < 4)
+    {
+        sLookRow++;
+        changed = TRUE;
+    }
+    else if (JOY_NEW(DPAD_LEFT) && sLookRow < 4)
+    {
+        sLook[sLookRow] = (sLook[sLookRow] + sLookCounts[sLookRow] - 1) % sLookCounts[sLookRow];
+        RefreshLookPreview();
+        changed = TRUE;
+    }
+    else if (JOY_NEW(DPAD_RIGHT) && sLookRow < 4)
+    {
+        sLook[sLookRow] = (sLook[sLookRow] + 1) % sLookCounts[sLookRow];
+        RefreshLookPreview();
+        changed = TRUE;
+    }
+    else if (JOY_NEW(A_BUTTON) && sLookRow == 4)
+    {
+        PlaySE(SE_SELECT);
+        gNewGameLookChoice = sLook[0] | (sLook[1] << 3) | (sLook[2] << 6) | (sLook[3] << 10);
+        DestroySprite(&gSprites[sPreviewSpriteId]);
+        FillWindowPixelBuffer(3, PIXEL_FILL(1));
+        ClearWindowTilemap(3);
+        CopyWindowToVram(3, COPYWIN_FULL);
+        gSprites[gTasks[taskId].tPlayerSpriteId].invisible = FALSE;
+        gSprites[gTasks[taskId].tPlayerSpriteId].oam.objMode = ST_OAM_OBJ_BLEND;
+        NewGameBirchSpeech_StartFadeOutTarget1InTarget2(taskId, 2);
+        NewGameBirchSpeech_StartFadePlatformIn(taskId, 1);
+        gTasks[taskId].func = Task_NewGameBirchSpeech_SlidePlatformAway2;
+        return;
+    }
+    else if (JOY_NEW(A_BUTTON))
+    {
+        sLookRow = 4;
+        changed = TRUE;
+    }
+    if (changed)
+    {
+        PlaySE(SE_SELECT);
+        DrawLookMenu();
     }
 }
 

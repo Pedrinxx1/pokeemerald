@@ -348,11 +348,56 @@ static const struct SpriteTemplate sSpriteTemplate_StarterCircle =
 };
 
 // .text
+// Iniciais aleatorios: qualquer Pokemon basico (sem pre-evolucao), sem lendarios/formas especiais.
+// Determinístico por save (usa o ID do treinador), entao as 3 bolas sempre mostram o mesmo.
+static bool8 IsValidRandomStarter(u16 species)
+{
+    if (species == SPECIES_NONE || species >= NUM_SPECIES)
+        return FALSE;
+    if (!IsSpeciesEnabled(species))
+        return FALSE;
+    if (GET_BASE_SPECIES_ID(species) != species)
+        return FALSE;
+    if (GetSpeciesPreEvolution(species) != SPECIES_NONE)
+        return FALSE;
+    if (gSpeciesInfo[species].isLegendary || gSpeciesInfo[species].isMythical
+     || gSpeciesInfo[species].isUltraBeast || gSpeciesInfo[species].isParadox
+     || gSpeciesInfo[species].isTotem)
+        return FALSE;
+    return TRUE;
+}
+
+static u16 GetRandomStarter(u16 slot)
+{
+    u32 seed = (gSaveBlock2Ptr->playerTrainerId[0] | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
+             | (gSaveBlock2Ptr->playerTrainerId[2] << 16) | (gSaveBlock2Ptr->playerTrainerId[3] << 24));
+    u16 species = SPECIES_NONE;
+    u16 prev0 = SPECIES_NONE, prev1 = SPECIES_NONE;
+    u16 i, tries;
+
+    for (i = 0; i <= slot; i++)
+    {
+        seed ^= (i + 1) * 0x9E3779B1;
+        for (tries = 0; tries < 5000; tries++)
+        {
+            seed = seed * 1664525 + 1013904223;
+            species = (seed >> 8) % NUM_SPECIES;
+            if (IsValidRandomStarter(species) && species != prev0 && species != prev1)
+                break;
+        }
+        if (tries >= 5000)
+            species = SPECIES_TREECKO; // seguranca
+        prev1 = prev0;
+        prev0 = species;
+    }
+    return species;
+}
+
 u16 GetStarterPokemon(u16 chosenStarterId)
 {
     if (chosenStarterId > STARTER_MON_COUNT)
         chosenStarterId = 0;
-    return sStarterMon[chosenStarterId];
+    return GetRandomStarter(chosenStarterId);
 }
 
 static void VblankCB_StarterChoose(void)

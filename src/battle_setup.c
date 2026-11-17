@@ -866,6 +866,19 @@ void ChooseStarter(void)
     gMain.savedCallback = CB2_GiveStarter;
 }
 
+static void CB2_GiveStarterNoBattle(void)
+{
+    *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
+    ScriptGiveMon(GetStarterPokemon(gSpecialVar_Result), 5, ITEM_NONE);
+    SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+}
+
+void ChooseStarterNoBattle(void)
+{
+    SetMainCallback2(CB2_ChooseStarter);
+    gMain.savedCallback = CB2_GiveStarterNoBattle;
+}
+
 static void CB2_GiveStarter(void)
 {
     u16 starterMon;

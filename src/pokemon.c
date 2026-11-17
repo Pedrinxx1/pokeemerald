@@ -984,6 +984,7 @@ static u32 UncompressStatus(u32 compressedStatus)
     else
         return STATUS1_NONE;
 }
+static u32 sDummyRibbon;
 
 void ZeroBoxMonData(struct BoxPokemon *boxMon)
 {
@@ -2594,25 +2595,25 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
             retVal = GetSubstruct3(boxMon)->effortRibbon;
             break;
         case MON_DATA_MARINE_RIBBON:
-            retVal = GetSubstruct3(boxMon)->marineRibbon;
+            retVal = sDummyRibbon;
             break;
         case MON_DATA_LAND_RIBBON:
-            retVal = GetSubstruct3(boxMon)->landRibbon;
+            retVal = sDummyRibbon;
             break;
         case MON_DATA_SKY_RIBBON:
-            retVal = GetSubstruct3(boxMon)->skyRibbon;
+            retVal = sDummyRibbon;
             break;
         case MON_DATA_COUNTRY_RIBBON:
-            retVal = GetSubstruct3(boxMon)->countryRibbon;
+            retVal = sDummyRibbon;
             break;
         case MON_DATA_NATIONAL_RIBBON:
-            retVal = GetSubstruct3(boxMon)->nationalRibbon;
+            retVal = sDummyRibbon;
             break;
         case MON_DATA_EARTH_RIBBON:
-            retVal = GetSubstruct3(boxMon)->earthRibbon;
+            retVal = sDummyRibbon;
             break;
         case MON_DATA_WORLD_RIBBON:
-            retVal = GetSubstruct3(boxMon)->worldRibbon;
+            retVal = sDummyRibbon;
             break;
         case MON_DATA_MODERN_FATEFUL_ENCOUNTER:
             retVal = GetSubstruct3(boxMon)->modernFatefulEncounter;
@@ -2667,13 +2668,13 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
                 retVal += substruct3->victoryRibbon;
                 retVal += substruct3->artistRibbon;
                 retVal += substruct3->effortRibbon;
-                retVal += substruct3->marineRibbon;
-                retVal += substruct3->landRibbon;
-                retVal += substruct3->skyRibbon;
-                retVal += substruct3->countryRibbon;
-                retVal += substruct3->nationalRibbon;
-                retVal += substruct3->earthRibbon;
-                retVal += substruct3->worldRibbon;
+                retVal += sDummyRibbon;
+                retVal += sDummyRibbon;
+                retVal += sDummyRibbon;
+                retVal += sDummyRibbon;
+                retVal += sDummyRibbon;
+                retVal += sDummyRibbon;
+                retVal += sDummyRibbon;
             }
             break;
         case MON_DATA_RIBBONS:
@@ -2690,13 +2691,13 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
                        | (substruct3->victoryRibbon << 17)
                        | (substruct3->artistRibbon << 18)
                        | (substruct3->effortRibbon << 19)
-                       | (substruct3->marineRibbon << 20)
-                       | (substruct3->landRibbon << 21)
-                       | (substruct3->skyRibbon << 22)
-                       | (substruct3->countryRibbon << 23)
-                       | (substruct3->nationalRibbon << 24)
-                       | (substruct3->earthRibbon << 25)
-                       | (substruct3->worldRibbon << 26);
+                       | (sDummyRibbon << 20)
+                       | (sDummyRibbon << 21)
+                       | (sDummyRibbon << 22)
+                       | (sDummyRibbon << 23)
+                       | (sDummyRibbon << 24)
+                       | (sDummyRibbon << 25)
+                       | (sDummyRibbon << 26);
             }
             break;
         case MON_DATA_HYPER_TRAINED_HP:
@@ -2725,6 +2726,9 @@ u32 GetBoxMonData3(struct BoxPokemon *boxMon, s32 field, u8 *data)
             break;
         case MON_DATA_GIGANTAMAX_FACTOR:
             retVal = GetSubstruct3(boxMon)->gigantamaxFactor;
+            break;
+        case MON_DATA_ACCESSORY:
+            retVal = GetSubstruct3(boxMon)->accessory;
             break;
         case MON_DATA_TERA_TYPE:
             {
@@ -3100,25 +3104,25 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             SET8(GetSubstruct3(boxMon)->effortRibbon);
             break;
         case MON_DATA_MARINE_RIBBON:
-            SET8(GetSubstruct3(boxMon)->marineRibbon);
+            SET8(sDummyRibbon);
             break;
         case MON_DATA_LAND_RIBBON:
-            SET8(GetSubstruct3(boxMon)->landRibbon);
+            SET8(sDummyRibbon);
             break;
         case MON_DATA_SKY_RIBBON:
-            SET8(GetSubstruct3(boxMon)->skyRibbon);
+            SET8(sDummyRibbon);
             break;
         case MON_DATA_COUNTRY_RIBBON:
-            SET8(GetSubstruct3(boxMon)->countryRibbon);
+            SET8(sDummyRibbon);
             break;
         case MON_DATA_NATIONAL_RIBBON:
-            SET8(GetSubstruct3(boxMon)->nationalRibbon);
+            SET8(sDummyRibbon);
             break;
         case MON_DATA_EARTH_RIBBON:
-            SET8(GetSubstruct3(boxMon)->earthRibbon);
+            SET8(sDummyRibbon);
             break;
         case MON_DATA_WORLD_RIBBON:
-            SET8(GetSubstruct3(boxMon)->worldRibbon);
+            SET8(sDummyRibbon);
             break;
         case MON_DATA_MODERN_FATEFUL_ENCOUNTER:
             SET8(GetSubstruct3(boxMon)->modernFatefulEncounter);
@@ -3162,6 +3166,9 @@ void SetBoxMonData(struct BoxPokemon *boxMon, s32 field, const void *dataArg)
             break;
         case MON_DATA_GIGANTAMAX_FACTOR:
             SET8(GetSubstruct3(boxMon)->gigantamaxFactor);
+            break;
+        case MON_DATA_ACCESSORY:
+            SET8(GetSubstruct3(boxMon)->accessory);
             break;
         case MON_DATA_TERA_TYPE:
             SET8(GetSubstruct0(boxMon)->teraType);

@@ -1,0 +1,57 @@
+{
+  "id": "MAP_LEGENDS_INDIGO_CHAMPION",
+  "name": "IndigoChampion",
+  "layout": "LAYOUT_EVER_GRANDE_CITY_CHAMPIONS_ROOM",
+  "music": "MUS_RG_VICTORY_ROAD",
+  "region_map_section": "MAPSEC_INDIGO_PLATEAU",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_LEGENDS_LEON_FINAL",
+      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
+      "x": 6,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "IndigoChampion_EventScript_Leon",
+      "flag": "FLAG_CHAPTER_1_DONE"
+    },
+    {
+      "local_id": "LOCALID_LEGENDS_LUGIA_SKY",
+      "graphics_id": "OBJ_EVENT_GFX_LUGIA",
+      "x": 6,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_LEGENDS_INDIGO_LUGIA"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 6,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_LEGENDS_INDIGO_LEAGUE",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

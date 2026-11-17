@@ -1634,3 +1634,531 @@ const u16 gTilesetPalettes_UnionRoom[][16] =
 };
 
 const u32 gTilesetTiles_UnionRoom[] = INCBIN_U32("data/tilesets/secondary/union_room/tiles.4bpp.fastSmol");
+
+const u32 gTilesetTiles_LegendsKanto[] = INCBIN_U32("data/tilesets/secondary/legends_kanto/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsKanto[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_kanto/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsValencia[] = INCBIN_U32("data/tilesets/secondary/legends_valencia/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsValencia[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_valencia/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsPummelo[] = INCBIN_U32("data/tilesets/secondary/legends_pummelo/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsPummelo[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_pummelo/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsForbiddenIsland[] = INCBIN_U32("data/tilesets/secondary/legends_forbiddenisland/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsForbiddenIsland[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_forbiddenisland/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsEcruteak[] = INCBIN_U32("data/tilesets/secondary/legends_ecruteak/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsEcruteak[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ecruteak/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsCelestic[] = INCBIN_U32("data/tilesets/secondary/legends_celestic/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsCelestic[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_celestic/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsSpearPillar[] = INCBIN_U32("data/tilesets/secondary/legends_spearpillar/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsSpearPillar[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_spearpillar/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsDistortionWorld[] = INCBIN_U32("data/tilesets/secondary/legends_distortionworld/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsDistortionWorld[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_distortionworld/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsOpelucid[] = INCBIN_U32("data/tilesets/secondary/legends_opelucid/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsOpelucid[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_opelucid/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsDragonspiralTop[] = INCBIN_U32("data/tilesets/secondary/legends_dragonspiraltop/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsDragonspiralTop[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_dragonspiraltop/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsLumiose[] = INCBIN_U32("data/tilesets/secondary/legends_lumiose/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsLumiose[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_lumiose/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsMelemele[] = INCBIN_U32("data/tilesets/secondary/legends_melemele/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsMelemele[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_melemele/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsUltraSpace[] = INCBIN_U32("data/tilesets/secondary/legends_ultraspace/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsUltraSpace[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_ultraspace/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsWyndon[] = INCBIN_U32("data/tilesets/secondary/legends_wyndon/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsWyndon[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_wyndon/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsMesagoza[] = INCBIN_U32("data/tilesets/secondary/legends_mesagoza/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsMesagoza[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mesagoza/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsAreaZero[] = INCBIN_U32("data/tilesets/secondary/legends_areazero/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsAreaZero[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_areazero/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsPrimordial[] = INCBIN_U32("data/tilesets/secondary/legends_primordial/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsPrimordial[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_primordial/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsSkyTemple[] = INCBIN_U32("data/tilesets/secondary/legends_skytemple/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsSkyTemple[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_skytemple/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsWorldStadium[] = INCBIN_U32("data/tilesets/secondary/legends_worldstadium/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsWorldStadium[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_worldstadium/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsPrehistoricIsland[] = INCBIN_U32("data/tilesets/secondary/legends_prehistoricisland/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsPrehistoricIsland[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_prehistoricisland/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsMewIsland[] = INCBIN_U32("data/tilesets/secondary/legends_mewisland/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsMewIsland[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_mewisland/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsDecolore[] = INCBIN_U32("data/tilesets/secondary/legends_decolore/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsDecolore[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_decolore/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsTinTower[] = INCBIN_U32("data/tilesets/secondary/legends_tintower/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsTinTower[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_tintower/palettes/15.gbapal"),
+};
+
+const u32 gTilesetTiles_LegendsBrassTower[] = INCBIN_U32("data/tilesets/secondary/legends_brasstower/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_LegendsBrassTower[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/12.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/13.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/14.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/legends_brasstower/palettes/15.gbapal"),
+};

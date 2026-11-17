@@ -1,0 +1,57 @@
+{
+  "id": "MAP_LEGENDS_ZERO_LAB",
+  "name": "ZeroLab",
+  "layout": "LAYOUT_DESERT_RUINS",
+  "music": "MUS_RG_SEVII_DUNGEON",
+  "region_map_section": "MAPSEC_OUTCAST_ISLAND",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "local_id": "LOCALID_LEGENDS_TERAPAGOS",
+      "graphics_id": "(SPECIES_TERAPAGOS + 0x4000)",
+      "x": 8,
+      "y": 22,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ZeroLab_EventScript_Terapagos",
+      "flag": "FLAG_CHAPTER_10_DONE"
+    },
+    {
+      "local_id": "LOCALID_LEGENDS_AUREON_LAB",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
+      "x": 6,
+      "y": 25,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_HIDE_LEGENDS_AUREON"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_LEGENDS_AREA_ZERO",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

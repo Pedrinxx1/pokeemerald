@@ -1,4 +1,5 @@
 #include "global.h"
+#include "summary_accessories.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_ai_main.h"
@@ -369,6 +370,10 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_PIKE_QUEEN] = { _("PIKE QUEEN") },
     [TRAINER_CLASS_PYRAMID_KING] = { _("PYRAMID KING") },
     [TRAINER_CLASS_RS_PROTAG] = { _("{PKMN} TRAINER") },
+    [TRAINER_CLASS_TEAM_ROCKET] = { _("EQ. ROCKET") },
+    [TRAINER_CLASS_TEAM_GALACTIC] = { _("GALÁCTICA") },
+    [TRAINER_CLASS_TEAM_PLASMA] = { _("EQ. PLASMA") },
+    [TRAINER_CLASS_ORDEM_ZERO] = { _("ORDEM ZERO") },
 };
 
 static void (*const sTurnActionsFuncsTable[])(void) =
@@ -1748,6 +1753,7 @@ static void CB2_HandleStartMultiBattle(void)
 
 void BattleMainCB2(void)
 {
+    BattleAcc_Update();
     AnimateSprites();
     BuildOamBuffer();
     RunTextPrinters();
@@ -1766,6 +1772,7 @@ void BattleMainCB2(void)
 
 static void FreeRestoreBattleData(void)
 {
+    BattleAcc_Clear();
     gMain.callback1 = gPreBattleCallback1;
     gScanlineEffect.state = 3;
     gMain.inBattle = FALSE;

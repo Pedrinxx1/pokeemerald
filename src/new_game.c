@@ -1,4 +1,6 @@
 #include "global.h"
+#include "player_custom.h"
+extern u16 gNewGameLookChoice;
 #include "new_game.h"
 #include "random.h"
 #include "pokemon.h"
@@ -133,7 +135,7 @@ static void ClearFrontierRecord(void)
 
 static void WarpToTruck(void)
 {
-    SetWarpDestination(MAP_GROUP(MAP_INSIDE_OF_TRUCK), MAP_NUM(MAP_INSIDE_OF_TRUCK), WARP_ID_NONE, -1, -1);
+    SetWarpDestination(MAP_GROUP(MAP_LEGENDS_PALLET_HOUSE), MAP_NUM(MAP_LEGENDS_PALLET_HOUSE), WARP_ID_NONE, 5, 5);
     WarpIntoMap();
 }
 
@@ -215,6 +217,20 @@ void NewGameInitData(void)
     ResetItemFlags();
     ResetDexNav();
     ClearFollowerNPCData();
+    SetPlayerLook(gNewGameLookChoice & 7, (gNewGameLookChoice >> 3) & 7, (gNewGameLookChoice >> 6) & 15, (gNewGameLookChoice >> 10) & 15);
+    VarSet(VAR_STORY_CHAPTER, 1);
+    FlagSet(FLAG_SYS_B_DASH);
+    FlagSet(FLAG_HIDE_LEGENDS_INDIGO_LUGIA);
+    FlagSet(FLAG_HIDE_LEGENDS_PALLET_SAILOR);
+    FlagSet(FLAG_HIDE_LEGENDS_RAYQUAZA);
+    FlagSet(FLAG_HIDE_LEGENDS_GIRATINA);
+    FlagSet(FLAG_HIDE_LEGENDS_ZYGARDE);
+    FlagSet(FLAG_HIDE_LEGENDS_AUREON);
+    FlagSet(FLAG_HIDE_LEGENDS_RECORDING);
+    FlagSet(FLAG_HIDE_LEGENDS_GUIDES);
+    VarSet(VAR_FRAGMENTS, 0);
+    AddBagItem(ITEM_EXP_SHARE, 1);
+    FlagSet(I_EXP_SHARE_FLAG);
     
     // Set Nuzlocke flag if it was selected during Birch's speech
     if (WasNuzlockeModeSelected())

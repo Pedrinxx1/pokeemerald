@@ -830,3 +830,267 @@ const struct Tileset gTileset_UnionRoom =
     .metatileAttributes = gMetatileAttributes_UnionRoom,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_LegendsKanto =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsKanto,
+    .palettes = gTilesetPalettes_LegendsKanto,
+    .metatiles = gMetatiles_LegendsKanto,
+    .metatileAttributes = gMetatileAttributes_LegendsKanto,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsValencia =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsValencia,
+    .palettes = gTilesetPalettes_LegendsValencia,
+    .metatiles = gMetatiles_LegendsValencia,
+    .metatileAttributes = gMetatileAttributes_LegendsValencia,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsPummelo =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsPummelo,
+    .palettes = gTilesetPalettes_LegendsPummelo,
+    .metatiles = gMetatiles_LegendsPummelo,
+    .metatileAttributes = gMetatileAttributes_LegendsPummelo,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsForbiddenIsland =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsForbiddenIsland,
+    .palettes = gTilesetPalettes_LegendsForbiddenIsland,
+    .metatiles = gMetatiles_LegendsForbiddenIsland,
+    .metatileAttributes = gMetatileAttributes_LegendsForbiddenIsland,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsEcruteak =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsEcruteak,
+    .palettes = gTilesetPalettes_LegendsEcruteak,
+    .metatiles = gMetatiles_LegendsEcruteak,
+    .metatileAttributes = gMetatileAttributes_LegendsEcruteak,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsCelestic =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsCelestic,
+    .palettes = gTilesetPalettes_LegendsCelestic,
+    .metatiles = gMetatiles_LegendsCelestic,
+    .metatileAttributes = gMetatileAttributes_LegendsCelestic,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsSpearPillar =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsSpearPillar,
+    .palettes = gTilesetPalettes_LegendsSpearPillar,
+    .metatiles = gMetatiles_LegendsSpearPillar,
+    .metatileAttributes = gMetatileAttributes_LegendsSpearPillar,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsDistortionWorld =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsDistortionWorld,
+    .palettes = gTilesetPalettes_LegendsDistortionWorld,
+    .metatiles = gMetatiles_LegendsDistortionWorld,
+    .metatileAttributes = gMetatileAttributes_LegendsDistortionWorld,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsOpelucid =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsOpelucid,
+    .palettes = gTilesetPalettes_LegendsOpelucid,
+    .metatiles = gMetatiles_LegendsOpelucid,
+    .metatileAttributes = gMetatileAttributes_LegendsOpelucid,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsDragonspiralTop =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsDragonspiralTop,
+    .palettes = gTilesetPalettes_LegendsDragonspiralTop,
+    .metatiles = gMetatiles_LegendsDragonspiralTop,
+    .metatileAttributes = gMetatileAttributes_LegendsDragonspiralTop,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsLumiose =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsLumiose,
+    .palettes = gTilesetPalettes_LegendsLumiose,
+    .metatiles = gMetatiles_LegendsLumiose,
+    .metatileAttributes = gMetatileAttributes_LegendsLumiose,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsMelemele =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsMelemele,
+    .palettes = gTilesetPalettes_LegendsMelemele,
+    .metatiles = gMetatiles_LegendsMelemele,
+    .metatileAttributes = gMetatileAttributes_LegendsMelemele,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsUltraSpace =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsUltraSpace,
+    .palettes = gTilesetPalettes_LegendsUltraSpace,
+    .metatiles = gMetatiles_LegendsUltraSpace,
+    .metatileAttributes = gMetatileAttributes_LegendsUltraSpace,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsWyndon =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsWyndon,
+    .palettes = gTilesetPalettes_LegendsWyndon,
+    .metatiles = gMetatiles_LegendsWyndon,
+    .metatileAttributes = gMetatileAttributes_LegendsWyndon,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsMesagoza =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsMesagoza,
+    .palettes = gTilesetPalettes_LegendsMesagoza,
+    .metatiles = gMetatiles_LegendsMesagoza,
+    .metatileAttributes = gMetatileAttributes_LegendsMesagoza,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsAreaZero =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsAreaZero,
+    .palettes = gTilesetPalettes_LegendsAreaZero,
+    .metatiles = gMetatiles_LegendsAreaZero,
+    .metatileAttributes = gMetatileAttributes_LegendsAreaZero,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsPrimordial =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsPrimordial,
+    .palettes = gTilesetPalettes_LegendsPrimordial,
+    .metatiles = gMetatiles_LegendsPrimordial,
+    .metatileAttributes = gMetatileAttributes_LegendsPrimordial,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsSkyTemple =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsSkyTemple,
+    .palettes = gTilesetPalettes_LegendsSkyTemple,
+    .metatiles = gMetatiles_LegendsSkyTemple,
+    .metatileAttributes = gMetatileAttributes_LegendsSkyTemple,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsWorldStadium =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsWorldStadium,
+    .palettes = gTilesetPalettes_LegendsWorldStadium,
+    .metatiles = gMetatiles_LegendsWorldStadium,
+    .metatileAttributes = gMetatileAttributes_LegendsWorldStadium,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsPrehistoricIsland =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsPrehistoricIsland,
+    .palettes = gTilesetPalettes_LegendsPrehistoricIsland,
+    .metatiles = gMetatiles_LegendsPrehistoricIsland,
+    .metatileAttributes = gMetatileAttributes_LegendsPrehistoricIsland,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsMewIsland =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsMewIsland,
+    .palettes = gTilesetPalettes_LegendsMewIsland,
+    .metatiles = gMetatiles_LegendsMewIsland,
+    .metatileAttributes = gMetatileAttributes_LegendsMewIsland,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsDecolore =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsDecolore,
+    .palettes = gTilesetPalettes_LegendsDecolore,
+    .metatiles = gMetatiles_LegendsDecolore,
+    .metatileAttributes = gMetatileAttributes_LegendsDecolore,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsTinTower =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsTinTower,
+    .palettes = gTilesetPalettes_LegendsTinTower,
+    .metatiles = gMetatiles_LegendsTinTower,
+    .metatileAttributes = gMetatileAttributes_LegendsTinTower,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LegendsBrassTower =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LegendsBrassTower,
+    .palettes = gTilesetPalettes_LegendsBrassTower,
+    .metatiles = gMetatiles_LegendsBrassTower,
+    .metatileAttributes = gMetatileAttributes_LegendsBrassTower,
+    .callback = NULL,
+};

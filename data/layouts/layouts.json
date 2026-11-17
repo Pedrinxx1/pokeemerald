@@ -4410,6 +4410,506 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_PALLET_TOWN",
+      "name": "Legends_PalletTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Legends_PalletTown/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_PalletTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ROUTE1",
+      "name": "Legends_Route1_Layout",
+      "width": 20,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Legends_Route1/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_VIRIDIAN_CITY",
+      "name": "Legends_ViridianCity_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Legends_ViridianCity/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_ViridianCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ROUTE2",
+      "name": "Legends_Route2_Layout",
+      "width": 20,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Legends_Route2/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Route2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_PEWTER_CITY",
+      "name": "Legends_PewterCity_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Legends_PewterCity/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_PewterCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_INDIGO_PLATEAU",
+      "name": "Legends_IndigoPlateau_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Legends_IndigoPlateau/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_IndigoPlateau/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_VALENCIA",
+      "name": "Legends_Valencia_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Legends_Valencia/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Valencia/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_PUMMELO",
+      "name": "Legends_Pummelo_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Legends_Pummelo/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Pummelo/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_FORBIDDEN_ISLAND",
+      "name": "Legends_ForbiddenIsland_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Legends_ForbiddenIsland/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_ForbiddenIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ECRUTEAK",
+      "name": "Legends_Ecruteak_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Legends_Ecruteak/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Ecruteak/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_CELESTIC",
+      "name": "Legends_Celestic_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/Legends_Celestic/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Celestic/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_OPELUCID",
+      "name": "Legends_Opelucid_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/Legends_Opelucid/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Opelucid/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_LUMIOSE",
+      "name": "Legends_Lumiose_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/Legends_Lumiose/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Lumiose/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_MELEMELE",
+      "name": "Legends_Melemele_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Legends_Melemele/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Melemele/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_WYNDON",
+      "name": "Legends_Wyndon_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/Legends_Wyndon/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Wyndon/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_MESAGOZA",
+      "name": "Legends_Mesagoza_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/Legends_Mesagoza/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Mesagoza/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_PRIMORDIAL",
+      "name": "Legends_Primordial_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Legends_Primordial/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Primordial/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_WORLD_STADIUM",
+      "name": "Legends_WorldStadium_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Legends_WorldStadium/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_WorldStadium/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_PREHISTORIC_ISLAND",
+      "name": "Legends_PrehistoricIsland_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Legends_PrehistoricIsland/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_PrehistoricIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_MEW_ISLAND",
+      "name": "Legends_MewIsland_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Legends_MewIsland/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_MewIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_DECOLORE",
+      "name": "Legends_Decolore_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/Legends_Decolore/border.bin",
+      "blockdata_filepath": "data/layouts/Legends_Decolore/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_PALLET_TOWN",
+      "name": "LegendsArt_PalletTown_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsKanto",
+      "border_filepath": "data/layouts/LegendsArt_PalletTown/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_PalletTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_ROUTE1",
+      "name": "LegendsArt_Route1_Layout",
+      "width": 20,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsKanto",
+      "border_filepath": "data/layouts/LegendsArt_Route1/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Route1/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_VIRIDIAN_CITY",
+      "name": "LegendsArt_ViridianCity_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsKanto",
+      "border_filepath": "data/layouts/LegendsArt_ViridianCity/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_ViridianCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_ROUTE2",
+      "name": "LegendsArt_Route2_Layout",
+      "width": 20,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsKanto",
+      "border_filepath": "data/layouts/LegendsArt_Route2/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Route2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_PEWTER_CITY",
+      "name": "LegendsArt_PewterCity_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsKanto",
+      "border_filepath": "data/layouts/LegendsArt_PewterCity/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_PewterCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_INDIGO_PLATEAU",
+      "name": "LegendsArt_IndigoPlateau_Layout",
+      "width": 20,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsKanto",
+      "border_filepath": "data/layouts/LegendsArt_IndigoPlateau/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_IndigoPlateau/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_VALENCIA",
+      "name": "LegendsArt_Valencia_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsValencia",
+      "border_filepath": "data/layouts/LegendsArt_Valencia/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Valencia/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_PUMMELO",
+      "name": "LegendsArt_Pummelo_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsPummelo",
+      "border_filepath": "data/layouts/LegendsArt_Pummelo/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Pummelo/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_FORBIDDEN_ISLAND",
+      "name": "LegendsArt_ForbiddenIsland_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsForbiddenIsland",
+      "border_filepath": "data/layouts/LegendsArt_ForbiddenIsland/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_ForbiddenIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_ECRUTEAK",
+      "name": "LegendsArt_Ecruteak_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsEcruteak",
+      "border_filepath": "data/layouts/LegendsArt_Ecruteak/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Ecruteak/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_CELESTIC",
+      "name": "LegendsArt_Celestic_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsCelestic",
+      "border_filepath": "data/layouts/LegendsArt_Celestic/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Celestic/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_SPEAR_PILLAR",
+      "name": "LegendsArt_SpearPillar_Layout",
+      "width": 27,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsSpearPillar",
+      "border_filepath": "data/layouts/LegendsArt_SpearPillar/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_SpearPillar/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_DISTORTION_WORLD",
+      "name": "LegendsArt_DistortionWorld_Layout",
+      "width": 19,
+      "height": 19,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsDistortionWorld",
+      "border_filepath": "data/layouts/LegendsArt_DistortionWorld/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_DistortionWorld/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_OPELUCID",
+      "name": "LegendsArt_Opelucid_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsOpelucid",
+      "border_filepath": "data/layouts/LegendsArt_Opelucid/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Opelucid/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_DRAGONSPIRAL_TOP",
+      "name": "LegendsArt_DragonspiralTop_Layout",
+      "width": 27,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsDragonspiralTop",
+      "border_filepath": "data/layouts/LegendsArt_DragonspiralTop/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_DragonspiralTop/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_LUMIOSE",
+      "name": "LegendsArt_Lumiose_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsLumiose",
+      "border_filepath": "data/layouts/LegendsArt_Lumiose/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Lumiose/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_MELEMELE",
+      "name": "LegendsArt_Melemele_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsMelemele",
+      "border_filepath": "data/layouts/LegendsArt_Melemele/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Melemele/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_ULTRA_SPACE",
+      "name": "LegendsArt_UltraSpace_Layout",
+      "width": 27,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsUltraSpace",
+      "border_filepath": "data/layouts/LegendsArt_UltraSpace/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_UltraSpace/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_WYNDON",
+      "name": "LegendsArt_Wyndon_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsWyndon",
+      "border_filepath": "data/layouts/LegendsArt_Wyndon/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Wyndon/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_MESAGOZA",
+      "name": "LegendsArt_Mesagoza_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsMesagoza",
+      "border_filepath": "data/layouts/LegendsArt_Mesagoza/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Mesagoza/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_AREA_ZERO",
+      "name": "LegendsArt_AreaZero_Layout",
+      "width": 32,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsAreaZero",
+      "border_filepath": "data/layouts/LegendsArt_AreaZero/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_AreaZero/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_PRIMORDIAL",
+      "name": "LegendsArt_Primordial_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsPrimordial",
+      "border_filepath": "data/layouts/LegendsArt_Primordial/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Primordial/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_SKY_TEMPLE",
+      "name": "LegendsArt_SkyTemple_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsSkyTemple",
+      "border_filepath": "data/layouts/LegendsArt_SkyTemple/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_SkyTemple/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_WORLD_STADIUM",
+      "name": "LegendsArt_WorldStadium_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsWorldStadium",
+      "border_filepath": "data/layouts/LegendsArt_WorldStadium/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_WorldStadium/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_PREHISTORIC_ISLAND",
+      "name": "LegendsArt_PrehistoricIsland_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsPrehistoricIsland",
+      "border_filepath": "data/layouts/LegendsArt_PrehistoricIsland/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_PrehistoricIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_MEW_ISLAND",
+      "name": "LegendsArt_MewIsland_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsMewIsland",
+      "border_filepath": "data/layouts/LegendsArt_MewIsland/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_MewIsland/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_DECOLORE",
+      "name": "LegendsArt_Decolore_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsDecolore",
+      "border_filepath": "data/layouts/LegendsArt_Decolore/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_Decolore/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_TIN_TOWER",
+      "name": "LegendsArt_TinTower_Layout",
+      "width": 25,
+      "height": 28,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsTinTower",
+      "border_filepath": "data/layouts/LegendsArt_TinTower/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_TinTower/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEGENDS_ART_BRASS_TOWER",
+      "name": "LegendsArt_BrassTower_Layout",
+      "width": 22,
+      "height": 19,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LegendsBrassTower",
+      "border_filepath": "data/layouts/LegendsArt_BrassTower/border.bin",
+      "blockdata_filepath": "data/layouts/LegendsArt_BrassTower/map.bin"
     }
   ]
 }

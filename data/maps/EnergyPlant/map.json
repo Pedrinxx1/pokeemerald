@@ -1,0 +1,83 @@
+{
+  "id": "MAP_LEGENDS_ENERGY_PLANT",
+  "name": "EnergyPlant",
+  "layout": "LAYOUT_MT_PYRE_SUMMIT",
+  "music": "MUS_RG_SEVII_DUNGEON",
+  "region_map_section": "MAPSEC_FIVE_ISLE_MEADOW",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
+      "x": 23,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EnergyPlant_EventScript_Boss",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
+      "x": 21,
+      "y": 9,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EnergyPlant_EventScript_Leon",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_LEGENDS_ETERNATUS",
+      "graphics_id": "(SPECIES_ETERNATUS + 0x4000)",
+      "x": 23,
+      "y": 5,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_CHAPTER_9_DONE"
+    }
+  ],
+  "warp_events": [
+    {
+      "x": 22,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_LEGENDS_WYNDON",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 23,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_LEGENDS_WYNDON",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 24,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_LEGENDS_WYNDON",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

@@ -160,6 +160,22 @@ const struct Item gItemsInfo[] =
 
 // Poké Balls
 
+    [ITEM_FRAGMENTO] =
+    {
+        .name = ITEM_NAME("Fragmento"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "Pedaço de um dos\n"
+            "nove núcleos que\n"
+            "Arceus criou."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_Shard,
+        .iconPalette = gItemIconPalette_RedShard,
+    },
+
     [ITEM_STRANGE_BALL] =
     {
         .name = ITEM_NAME("Strange Ball"),

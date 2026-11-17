@@ -1,4 +1,5 @@
 #include "global.h"
+#include "player_custom.h"
 #include "main.h"
 #include "bike.h"
 #include "event_data.h"
@@ -310,7 +311,7 @@ static const u8 sRSAvatarGfxIds[GENDER_COUNT] =
     [FEMALE] = OBJ_EVENT_GFX_LINK_RS_MAY
 };
 
-static const u8 sPlayerAvatarGfxToStateFlag[GENDER_COUNT][5][2] =
+static const u16 sPlayerAvatarGfxToStateFlag[GENDER_COUNT][5][2] =
 {
     [MALE] =
     {
@@ -1498,7 +1499,21 @@ u16 GetRivalAvatarGraphicsIdByStateIdAndGender(u8 state, u8 gender)
 
 u16 GetPlayerAvatarGraphicsIdByStateIdAndGender(u8 state, u8 gender)
 {
-    return sPlayerAvatarGfxIds[state][gender];
+    u8 idx;
+    switch (state)
+    {
+    case PLAYER_AVATAR_STATE_NORMAL:     idx = 0; break;
+    case PLAYER_AVATAR_STATE_MACH_BIKE:  idx = 1; break;
+    case PLAYER_AVATAR_STATE_ACRO_BIKE:  idx = 2; break;
+    case PLAYER_AVATAR_STATE_SURFING:    idx = 3; break;
+    case PLAYER_AVATAR_STATE_UNDERWATER: idx = 4; break;
+    case PLAYER_AVATAR_STATE_FIELD_MOVE: idx = 5; break;
+    case PLAYER_AVATAR_STATE_VSSEEKER:   idx = 5; break;
+    case PLAYER_AVATAR_STATE_FISHING:    idx = 6; break;
+    case PLAYER_AVATAR_STATE_WATERING:   idx = 7; break;
+    default: idx = 0; break;
+    }
+    return GetCustomPlayerGfxId(gender, idx);
 }
 
 u16 GetFRLGAvatarGraphicsIdByGender(u8 gender)
@@ -1518,6 +1533,8 @@ u16 GetPlayerAvatarGraphicsIdByStateId(u8 state)
 
 u8 GetPlayerAvatarGenderByGraphicsId(u16 gfxId)
 {
+    if (gfxId >= OBJ_EVENT_GFX_CUSTOM_BASE && gfxId < OBJ_EVENT_GFX_CUSTOM_BASE + OBJ_EVENT_GFX_CUSTOM_COUNT)
+        return (gfxId - OBJ_EVENT_GFX_CUSTOM_BASE) / (CUSTOM_NUM_STYLES * CUSTOM_NUM_STATES) ? FEMALE : MALE;
     switch (gfxId)
     {
     case OBJ_EVENT_GFX_MAY_NORMAL:
@@ -1589,6 +1606,14 @@ static u8 GetPlayerAvatarStateTransitionByGraphicsId(u16 graphicsId, u8 gender)
 {
     u8 i;
 
+    if (graphicsId >= OBJ_EVENT_GFX_CUSTOM_BASE && graphicsId < OBJ_EVENT_GFX_CUSTOM_BASE + OBJ_EVENT_GFX_CUSTOM_COUNT)
+    {
+        i = (graphicsId - OBJ_EVENT_GFX_CUSTOM_BASE) % CUSTOM_NUM_STATES;
+        if (i < ARRAY_COUNT(sPlayerAvatarGfxToStateFlag[0]))
+            return sPlayerAvatarGfxToStateFlag[gender][i][1];
+        return PLAYER_AVATAR_FLAG_ON_FOOT;
+    }
+
     for (i = 0; i < ARRAY_COUNT(sPlayerAvatarGfxToStateFlag[0]); i++)
     {
         if (sPlayerAvatarGfxToStateFlag[gender][i][0] == graphicsId)
@@ -1605,7 +1630,7 @@ u16 GetPlayerAvatarGraphicsIdByCurrentState(void)
     for (i = 0; i < ARRAY_COUNT(sPlayerAvatarGfxToStateFlag[0]); i++)
     {
         if (sPlayerAvatarGfxToStateFlag[gPlayerAvatar.gender][i][1] & flags)
-            return sPlayerAvatarGfxToStateFlag[gPlayerAvatar.gender][i][0];
+            return GetCustomPlayerGfxId(gPlayerAvatar.gender, i);
     }
     return 0;
 }

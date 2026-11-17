@@ -84,6 +84,8 @@ COMMON_DATA bool8 (*gMenuCallback)(void) = NULL;
 
 // EWRAM
 EWRAM_DATA static u8 sSafariBallsWindowId = 0;
+EWRAM_DATA static u8 sStoryWindowId = 0;
+EWRAM_DATA static bool8 sStoryWindowShown = FALSE;
 EWRAM_DATA static u8 sBattlePyramidFloorWindowId = 0;
 EWRAM_DATA static u8 sStartMenuCursorPos = 0;
 EWRAM_DATA static u8 sNumStartMenuActions = 0;
@@ -434,6 +436,21 @@ static void BuildMultiPartnerRoomStartMenu(void)
     AddStartMenuAction(MENU_ACTION_EXIT);
 }
 
+static const u8 sText_StoryInfo[] = _("Capítulo {STR_VAR_1}\nFragm.: {STR_VAR_2}/9");
+
+static void ShowStoryWindow(void)
+{
+    sStoryWindowId = AddWindow(&sWindowTemplate_SafariBalls);
+    PutWindowTilemap(sStoryWindowId);
+    DrawStdWindowFrame(sStoryWindowId, FALSE);
+    ConvertIntToDecimalStringN(gStringVar1, VarGet(VAR_STORY_CHAPTER), STR_CONV_MODE_LEFT_ALIGN, 2);
+    ConvertIntToDecimalStringN(gStringVar2, VarGet(VAR_FRAGMENTS), STR_CONV_MODE_LEFT_ALIGN, 1);
+    StringExpandPlaceholders(gStringVar4, sText_StoryInfo);
+    AddTextPrinterParameterized(sStoryWindowId, FONT_NORMAL, gStringVar4, 0, 1, TEXT_SKIP_DRAW, NULL);
+    CopyWindowToVram(sStoryWindowId, COPYWIN_GFX);
+    sStoryWindowShown = TRUE;
+}
+
 static void ShowSafariBallsWindow(void)
 {
     sSafariBallsWindowId = AddWindow(&sWindowTemplate_SafariBalls);
@@ -462,6 +479,13 @@ static void ShowPyramidFloorWindow(void)
 
 static void RemoveExtraStartMenuWindows(void)
 {
+    if (sStoryWindowShown)
+    {
+        ClearStdWindowAndFrameToTransparent(sStoryWindowId, FALSE);
+        CopyWindowToVram(sStoryWindowId, COPYWIN_GFX);
+        RemoveWindow(sStoryWindowId);
+        sStoryWindowShown = FALSE;
+    }
     if (GetSafariZoneFlag())
     {
         ClearStdWindowAndFrameToTransparent(sSafariBallsWindowId, FALSE);
@@ -530,6 +554,8 @@ static bool32 InitStartMenuStep(void)
             ShowSafariBallsWindow();
         if (CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
             ShowPyramidFloorWindow();
+        else if (!GetSafariZoneFlag() && VarGet(VAR_STORY_CHAPTER) != 0)
+            ShowStoryWindow();
         sInitStartMenuData[0]++;
         break;
     case 4:

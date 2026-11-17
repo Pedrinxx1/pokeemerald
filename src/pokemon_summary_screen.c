@@ -1,4 +1,5 @@
 #include "global.h"
+#include "summary_accessories.h"
 #include "main.h"
 #include "battle.h"
 #include "battle_anim.h"
@@ -206,6 +207,8 @@ static bool8 ExtractMonDataToSummaryStruct(struct Pokemon *);
 static void SetDefaultTilemaps(void);
 static void CloseSummaryScreen(u8);
 static void Task_HandleInput(u8);
+static void Task_HandleInput_Dress(u8);
+static void ShowDressPrompt(void);
 static void ChangeSummaryPokemon(u8, s8);
 static void Task_ChangeSummaryMon(u8);
 static s8 AdvanceMonIndex(s8);
@@ -1343,6 +1346,7 @@ static bool8 LoadGraphics(void)
         sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON] = LoadMonGfxAndSprite(&sMonSummaryScreen->currentMon, &sMonSummaryScreen->switchCounter);
         if (sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON] != SPRITE_NONE)
         {
+            SummaryAcc_Refresh(&sMonSummaryScreen->currentMon, sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON]);
             sMonSummaryScreen->switchCounter = 0;
             gMain.state++;
         }
@@ -1684,6 +1688,54 @@ static void ClearStatLabel(u32 length, u32 statsCoordX, u32 statsCoordY)
         FillBgTilemapBufferRect(1, blankStatsBlock, statsCoordX + blankOffset + i, statsCoordY, 1, 1, 2);
 }
 
+static u8 sDressSlot;
+
+static void ShowDressPrompt(void)
+{
+    u8 code = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_ACCESSORY);
+
+    FillWindowPixelBuffer(PSS_LABEL_WINDOW_PROMPT_UTILITY, PIXEL_FILL(0));
+    PutWindowTilemap(PSS_LABEL_WINDOW_PROMPT_UTILITY);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_PROMPT_UTILITY, SummaryAcc_GetLabel(code, sDressSlot), 0, 1, 0, 0);
+}
+
+static void Task_HandleInput_Dress(u8 taskId)
+{
+    s8 dir = 0;
+    u8 code;
+
+    if (JOY_NEW(DPAD_UP) && sDressSlot > 0)
+        sDressSlot--;
+    else if (JOY_NEW(DPAD_DOWN) && sDressSlot < ACC_NUM_SLOTS - 1)
+        sDressSlot++;
+    else if (JOY_NEW(DPAD_LEFT))
+        dir = -1;
+    else if (JOY_NEW(DPAD_RIGHT))
+        dir = 1;
+    else if (JOY_NEW(A_BUTTON | B_BUTTON | SELECT_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        ShowUtilityPrompt(SUMMARY_MODE_NORMAL);
+        gTasks[taskId].func = Task_HandleInput;
+        return;
+    }
+    else
+        return;
+
+    PlaySE(SE_SELECT);
+    if (dir != 0)
+    {
+        code = SummaryAcc_Change(GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_ACCESSORY), sDressSlot, dir);
+        SetMonData(&sMonSummaryScreen->currentMon, MON_DATA_ACCESSORY, &code);
+        if (sMonSummaryScreen->isBoxMon)
+            SetBoxMonData(&sMonSummaryScreen->monList.boxMons[sMonSummaryScreen->curMonIndex], MON_DATA_ACCESSORY, &code);
+        else
+            SetMonData(&sMonSummaryScreen->monList.mons[sMonSummaryScreen->curMonIndex], MON_DATA_ACCESSORY, &code);
+        SummaryAcc_Refresh(&sMonSummaryScreen->currentMon, sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON]);
+    }
+    ShowDressPrompt();
+}
+
 static void Task_HandleInput(u8 taskId)
 {
     if (MenuHelpers_ShouldWaitForLinkRecv() != TRUE && !gPaletteFade.active)
@@ -1703,6 +1755,13 @@ static void Task_HandleInput(u8 taskId)
         else if ((JOY_NEW(DPAD_RIGHT)) || GetLRKeysPressed() == MENU_R_PRESSED)
         {
             ChangePage(taskId, 1);
+        }
+        else if (JOY_NEW(SELECT_BUTTON) && !sMonSummaryScreen->summary.isEgg)
+        {
+            PlaySE(SE_SELECT);
+            sDressSlot = 0;
+            ShowDressPrompt();
+            gTasks[taskId].func = Task_HandleInput_Dress;
         }
         else if (JOY_NEW(A_BUTTON))
         {
@@ -1943,6 +2002,7 @@ static void Task_ChangeSummaryMon(u8 taskId)
         break;
     case 1:
         SummaryScreen_DestroyAnimDelayTask();
+        SummaryAcc_Destroy();
         DestroySpriteAndFreeResources(&gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON]]);
         break;
     case 2:
@@ -1993,6 +2053,7 @@ static void Task_ChangeSummaryMon(u8 taskId)
         if (sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON] == SPRITE_NONE)
             return;
         gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON]].data[2] = 1;
+        SummaryAcc_Refresh(&sMonSummaryScreen->currentMon, sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON]);
         TryDrawExperienceProgressBar();
         data[1] = 0;
         break;

@@ -420,9 +420,10 @@ void NuzlockeOnBattleEnd(void)
                 return;
             }
             
-            // This was a catchable (non-duplicate, non-shiny) encounter
-            // Mark the area as used regardless of outcome (caught, defeated, ran, teleported)
-            HasWildPokemonBeenSeenInLocation(currentLocation, TRUE);
+            // Uma captura por area: so gasta a area se o Pokemon foi capturado.
+            // Fugir ou derrotar nao consome a area; pode tentar outro.
+            if (gBattleOutcome == B_OUTCOME_CAUGHT)
+                HasWildPokemonBeenSeenInLocation(currentLocation, TRUE);
         }
     }
 }
